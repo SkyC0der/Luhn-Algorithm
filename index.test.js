@@ -35,7 +35,7 @@ describe('luhn_check()', () => {
     expect(luhn_check('059a')).toEqual(false)
   })
   test('test_valid_strings_with_punctuation_included_become_invalid', () => {
-    expect(luhn_check('055-444-285')).toEqual(true)
+    expect(luhn_check('055-444-285')).toEqual(false)
   })
   test('test_valid_strings_with_symbols_included_become_invalid', () => {
     expect(luhn_check('055# 444$ 285')).toEqual(false)
